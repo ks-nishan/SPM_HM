@@ -9,10 +9,21 @@ import Patient from "./componets/n_DetailPatient";
 import Login from "./componets/n_login/n_Login";
 import Home from "./componets/n_home";
 import Programs from "./componets/n_Programs";
-import PrintPatients from "./componets/n_PrintPatients";
 import CreateProgram from "./componets/n_CreateProgram";
 import EditProgram from "./componets/n_EditProgram";
 import PatientsProgeam from "./componets/n_patients_programs";
+
+import CrudAdd from "./componets/cruds/CrudAdd";
+import CrudTable from "./componets/cruds/CrudTable";
+import CrudListView from "./componets/cruds/CrudListView";
+import CrudGridView from "./componets/cruds/CrudGridView";
+import CrudDetails from "./componets/cruds/CrudDetails";
+import CrudEdit from "./componets/cruds/CrudEdit";
+import CrudDelete from "./componets/cruds/CrudDelete";
+
+import AddnewDoctor from "./componets/cruds/AddnewDoctor";
+import Doctorcrudtable from "./componets/cruds/Doctorcrudtable"
+import ThHome from "./componets/pages/ThHome";
 // Mathy
 import AddMedicines from "./componets/m_AddMedicines";
 import MedicinesAdmin from "./componets/m_MedicinesAdmin";
@@ -44,6 +55,17 @@ function App() {
           <Route path="/editProgram/:id" element={<EditProgram />} />
           <Route path="/createProgram" element={<CreateProgram />} />
           <Route path="/patientsProgram" element={<PatientsProgeam />} />
+            <Route exact path="/thhome" element={<ThHome/>} />	
+          <Route exact path="/cruds" element={<CrudTable />} />					
+					<Route exact path="/cruds/list-view" element={<CrudListView />} />
+					<Route exact path="/cruds/grid-view" element={<CrudGridView />} />
+					<Route exact path="/cruds/new" element={<CrudAdd />} />
+					<Route exact path="/cruds/Doc" element={<AddnewDoctor />} />
+					<Route exact path="/cruds/:_id" element={<CrudDetails />} />
+					<Route exact path="/cruds/:_id/edit" element={<CrudEdit />} />
+					<Route exact path="/cruds/:_id/delete" element={<CrudDelete />} />
+					<Route exact path="/cruds/tab" element={<Doctorcrudtable />} />
+					
           {/* Mathy */}
           <Route exact path='/addmed' element={<AddMedicines/>}/>
           <Route path='/show' element={<MedicinesAdmin/>}/>

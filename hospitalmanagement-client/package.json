@@ -23,6 +23,8 @@
     "react-router": "^6.3.0",
     "react-router-dom": "^6.4.2",
     "react-scripts": "5.0.1",
+    "react-search": "^2.1.1",
+    "react-to-pdf": "^0.0.14",
     "react-stripe-checkout": "^2.6.3",
     "react-to-print": "^2.14.7",
     "react-toastify": "^9.0.8",

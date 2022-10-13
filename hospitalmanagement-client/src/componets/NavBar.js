@@ -25,7 +25,7 @@ function NavBar() {
                 </li>
 
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/add">
+                  <a class="nav-link active" aria-current="page" href="/thhome">
                     Book Appointment
                   </a>
                 </li>
