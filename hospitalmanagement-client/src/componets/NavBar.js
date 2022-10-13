@@ -30,15 +30,24 @@ function NavBar() {
                   </a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="/">
+                  <a
+                    class="nav-link active"
+                    aria-current="page"
+                    href="/labdash"
+                  >
                     Book Lab Test
+                  </a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link active" aria-current="page" href="/view">
+                    View Lab Appointments
                   </a>
                 </li>
                 <li class="nav-item">
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="/workshop"
+                    href="/phar"
                   >
                     Buy Medicines
                   </a>
