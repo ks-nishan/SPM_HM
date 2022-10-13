@@ -47,7 +47,7 @@ function NavBar() {
                   <a
                     class="nav-link active"
                     aria-current="page"
-                    href="/workshop"
+                    href="/phar"
                   >
                     Buy Medicines
                   </a>
