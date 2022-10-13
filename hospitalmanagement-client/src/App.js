@@ -11,6 +11,12 @@ import PrintPatients from "./componets/n_PrintPatients";
 import CreateProgram from "./componets/n_CreateProgram";
 import EditProgram from "./componets/n_EditProgram";
 import PatientsProgeam from "./componets/n_patients_programs";
+// Mathy
+import AddMedicines from "./componets/m_AddMedicines";
+import MedicinesAdmin from "./componets/m_MedicinesAdmin";
+import DeliveryDetails from "./componets/m_deliveryDetails";
+import Pharmacy from "./componets/m_pharmacy";
+import Pay from "./componets/m_pay";
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 function App() {
   return (
@@ -28,6 +34,12 @@ function App() {
           <Route path="/editProgram/:id" element={<EditProgram />} />
           <Route path="/createProgram" element={<CreateProgram />} />
           <Route path="/patientsProgram" element={<PatientsProgeam />} />
+          {/* Mathy */}
+          <Route exact path='/addmed' element={<AddMedicines/>}/>
+          <Route path='/show' element={<MedicinesAdmin/>}/>
+          <Route path='/delivery' element={<DeliveryDetails/>}/>
+          <Route  path="/pay" element={<Pay/>} />
+          <Route path='/phar' element={<Pharmacy/>}/>
         </Routes>
       </BrowserRouter>
     </div>
