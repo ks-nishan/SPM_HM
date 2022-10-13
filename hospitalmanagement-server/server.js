@@ -3,6 +3,9 @@ const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
 const app = express();
 const cors = require("cors");
+const patients = require("./P_models/PatientsSchema");
+
+const router = require("./P_routes/router");
 
 //import routes
 const userRoutes = require("./n_routes/n_users");
@@ -14,6 +17,7 @@ app.use(cors());
 
 app.use(userRoutes);
 app.use(programRoutes);
+app.use(router);
 
 const PORT = 8000;
 const DB_URL =
