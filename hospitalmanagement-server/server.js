@@ -7,6 +7,8 @@ const cors = require("cors");
 //import routes
 const userRoutes = require("./n_routes/n_users");
 const programRoutes = require("./n_routes/n_programs");
+const medicine = require('./n_routes/m_Medicine');
+const delivary = require('./n_routes/m_delivary');
 
 //middleware
 app.use(bodyParser.json());
@@ -14,7 +16,8 @@ app.use(cors());
 
 app.use(userRoutes);
 app.use(programRoutes);
-
+app.use('/medicine', medicine);
+app.use('/delivary', delivary);
 const PORT = 8000;
 const DB_URL =
   "mongodb+srv://nishan:nisha123@cluster1.trfvymb.mongodb.net/SPM_DB?retryWrites=true&w=majority";
