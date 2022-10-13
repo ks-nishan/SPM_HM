@@ -52,7 +52,7 @@ function App() {
           <Route path='/phar' element={<Pharmacy/>}/>
           <Route path="/labdash" element={<P_Dashboard />} />
           <Route path="/book" element={<P_Booking />} />
-          <Route path="/" element={<P_ViewAllAppointments />} />
+          <Route path="/adminview" element={<P_ViewAllAppointments />} />
           <Route path="/form" element={<P_Form />} />
           <Route path="/edit/:id" element={<P_UserEdit />} />
           <Route path="/view" element={<P_Details />} />
